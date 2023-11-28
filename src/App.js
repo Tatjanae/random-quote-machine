@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; 
-import { FaTwitter, FaTumblr } from "react-icons/fa";
+import { FaTwitter } from 'react-icons/fa';
+import { FaTumblr } from 'react-icons/fa';
 
 
 function App(){
