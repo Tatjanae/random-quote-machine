@@ -125,8 +125,14 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    .buttonrow {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.8rem;
+    }
+    
     .btn {
-    margin: 4px;
     font-size: 14px;
     background-color:#ffff;
     }
