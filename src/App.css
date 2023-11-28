@@ -1,0 +1,147 @@
+* {
+    transition: all 0.2s ease-in-out
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit; 
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.main-container {
+    height: 100%;
+    width: 100%;
+    resize: none;
+}
+
+.container {
+    width: 750px;
+    height: 350px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #FFFFF0;
+    border-radius: 10px;
+}
+
+.card {
+    background-color: #ffff;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    border-color: lightgrey;
+    padding-bottom: 10px;
+}
+
+.card-title {
+    text-align: right;
+}
+
+.card-body {
+    margin-bottom: 30px;
+}
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.social-media {
+    color: black;
+}
+
+.social-media:hover {
+    color: white;
+}
+
+.btn {
+    padding: 8px;
+    margin: 4px;
+    font-size: 16px;
+    width: 40%;
+    background-color:#ffff;
+    margin-top: 30px;
+    max-width: 25%;
+    flex: 1;
+    margin-bottom: 10px;
+}
+
+.new-quote {
+    margin-left: 160px;
+    border-color: black;
+    max-width: 80%;
+    flex: 1 1 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.new-quote:hover {
+    color: black;
+}
+
+.twitter {
+    border-color: #0fb0f5;
+    resize: none;
+    width: 10%;
+}
+
+.twitter:hover {
+    background-color: #0fb0f5;
+    border-color: #0fb0f5;
+}
+
+.tumblr {
+    resize: none;
+    border-color: #34526f;
+    width: 10%;
+}
+
+.tumblr:hover {
+    background-color: #34526f;
+    border-color: #34526f;
+}
+
+.credits {
+    text-decoration: none;
+    color: black;
+}
+
+.credits:hover {
+    color: #FFC0CB; 
+}
+
+.credits:visited {
+    color: #FF647F;
+}
+
+@media (max-width: 768px) {
+    .btn {
+    margin: 4px;
+    font-size: 14px;
+    background-color:#ffff;
+    }
+    
+    .new-quote {
+    max-width: 35%;
+    white-space: nowrap;
+    margin-left: 80px;
+    }
+
+    .twitter {
+        width: 15%;
+    }
+
+    .tumblr {
+        width: 15%;
+    }
+}
