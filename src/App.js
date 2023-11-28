@@ -1,7 +1,6 @@
 import React from 'react';
-import './App.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
-import { faTwitter, faTumblr } from '@fortawesome/free-brands-svg-icons';
+import './App.css'; 
+import { FaTwitter, FaTumblr } from "react-icons/fa";
 
 
 function App(){
@@ -65,8 +64,8 @@ const buttonStyle = {
   <a href={"https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" + encodeURIComponent(
     '""' + randomQuote.text + '" ' + randomQuote.author
   )
-  } target="_blank" rel='noreferrer' className="btn btn-outline-warning twitter" id="tweet-quote"><FontAwesomeIcon className="social-media" icon={faTwitter} /></a>
-  <a href={"https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + encodeURIComponent(randomQuote.author) + "&content=" + encodeURIComponent(randomQuote.text) + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tunblr_share_button"} target="_blank" className="btn btn-outline-danger tumblr" rel='noreferrer'><FontAwesomeIcon className="social-media" icon={faTumblr} /></a>
+  } target="_blank" rel='noreferrer' className="btn btn-outline-warning twitter" id="tweet-quote"><FaTwitter className="social-media"/></a>
+  <a href={"https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes,freecodecamp&caption=" + encodeURIComponent(randomQuote.author) + "&content=" + encodeURIComponent(randomQuote.text) + "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tunblr_share_button"} target="_blank" className="btn btn-outline-danger tumblr" rel='noreferrer'><FaTumblr className="social-media"/></a>
   <button onClick={getNewQuote} className="new-quote btn btn-outline-primary text-center social-media" id="new-quote" style={buttonStyle} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>New Quote</button>
 </div>
 </div>
