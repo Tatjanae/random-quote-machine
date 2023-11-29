@@ -35,7 +35,7 @@ body {
     height: 100%;
     margin: 0 auto;
     border-color: lightgrey;
-    padding-bottom: 10px;
+
 }
 
 .card-title {
@@ -45,13 +45,12 @@ body {
 .card-body {
     margin-bottom: 30px;
 }
-.row {
+
+.buttonrow {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 10px;
 }
 
 
@@ -72,7 +71,6 @@ body {
     margin-top: 30px;
     max-width: 25%;
     flex: 1;
-    margin-bottom: 10px;
 }
 
 .new-quote {
@@ -126,11 +124,16 @@ body {
 
 @media (max-width: 768px) {
 
-    .buttonrow {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -0.8rem;
+    .container {
+        height: 80%;
+        padding: 10px;
     }
+
+    .buttonrow {
+  display: column;
+  grid-template-columns: repeat(1fr, 1fr, 1fr);
+  justify-content: center;
+}
     
     .btn {
     font-size: 14px;
@@ -144,10 +147,10 @@ body {
     }
 
     .twitter {
-        width: 15%;
+        width: 100%;
     }
 
     .tumblr {
-        width: 15%;
+        width: 100%;
     }
 }
