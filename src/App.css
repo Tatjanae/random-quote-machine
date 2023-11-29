@@ -66,9 +66,9 @@ body {
     padding: 8px;
     margin: 4px;
     font-size: 16px;
-    width: 40%;
+    width: calc(33.33% - 8px);
     background-color:#ffff;
-    margin-top: 30px;
+    margin-top: 10px;
     max-width: 25%;
     flex: 1;
 }
@@ -125,32 +125,25 @@ body {
 @media (max-width: 768px) {
 
     .container {
-        height: 80%;
-        padding: 10px;
+        height: 100%;
+        padding: 30px 10px 30px;
     }
 
     .buttonrow {
-  display: column;
-  grid-template-columns: repeat(1fr, 1fr, 1fr);
-  justify-content: center;
-}
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
     
     .btn {
     font-size: 14px;
     background-color:#ffff;
+    width: 100%;
+    max-width: 100px; 
+    margin: 8px 0;
     }
     
     .new-quote {
-    max-width: 35%;
-    white-space: nowrap;
-    margin-left: 80px;
-    }
-
-    .twitter {
-        width: 100%;
-    }
-
-    .tumblr {
-        width: 100%;
+        margin-left: 0;
     }
 }
